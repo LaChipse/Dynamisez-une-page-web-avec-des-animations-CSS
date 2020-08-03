@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "site de restauration",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaChipse/P3_OpenClassrooms.git"
+  },
+  "author": "Victor Combettes",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/LaChipse/P3_OpenClassrooms/issues"
+  },
+  "homepage": "https://github.com/LaChipse/P3_OpenClassrooms#readme"
+}
