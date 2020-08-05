@@ -19,30 +19,34 @@
 .menu--note {
   background-color: #e4d5ce;
   font-family: Arial;
-  padding: 3em;
-  height: 500px;
   width: 35%;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  text-align: center;
 }
 .menu--chic {
   background-color: white;
   font-family: "Bookman old Style";
-  padding: 3em;
-  height: 500px;
   width: 35%;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  text-align: center;
 }
 .menu--delice {
   background-color: white;
   font-family: Georgia;
-  padding: 3em;
-  height: 500px;
   width: 35%;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  text-align: center;
 }
 .menu--palette {
   background-color: white;
   font-family: "Times New Roman";
-  padding: 3em;
-  height: 500px;
   width: 35%;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

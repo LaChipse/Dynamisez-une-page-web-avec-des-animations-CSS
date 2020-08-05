@@ -2,11 +2,12 @@ $color-primary: #319678;
 $color-secondary: #FFCA28;
 $color-note: #e4d5ce;
 $color-bg: white;
-$padding-menu : 3em;
 
  @mixin dimension {
-     height: 500px;
      width: 35%;
+     padding-top: 15em;
+     padding-bottom: 15em;
+    text-align: center;
  }
 
 .header {
@@ -22,22 +23,18 @@ $menu-input: (
   note: (
       bg: $color-note,
       ff: Arial,
-      pad: $padding-menu,
    ),
   chic: (
       bg: $color-bg,
       ff: 'Bookman old Style',
-      pad: $padding-menu,
   ),
   delice: (
       bg: $color-bg,
       ff: Georgia,
-      pad: $padding-menu,
   ),
   palette: (
     bg: $color-bg,
     ff: 'Times New Roman',
-    pad: $padding-menu,
   )
 );
 
