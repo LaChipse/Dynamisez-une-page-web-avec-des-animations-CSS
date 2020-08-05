@@ -1,5 +1,66 @@
-$color-primary: green;
+$color-primary: #319678;
+$color-secondary: #FFCA28;
+$color-note: #e4d5ce;
+$color-bg: white;
+$padding-menu : 3em;
+
+ @mixin dimension {
+     height: 500px;
+     width: 35%;
+ }
 
 .header {
+    color: $color-secondary;
     background-color: $color-primary;
+    &__heading {
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+$menu-input: (
+  note: (
+      bg: $color-note,
+      ff: Arial,
+      pad: $padding-menu,
+   ),
+  chic: (
+      bg: $color-bg,
+      ff: 'Bookman old Style',
+      pad: $padding-menu,
+  ),
+  delice: (
+      bg: $color-bg,
+      ff: Georgia,
+      pad: $padding-menu,
+  ),
+  palette: (
+    bg: $color-bg,
+    ff: 'Times New Roman',
+    pad: $padding-menu,
+  )
+);
+
+@mixin menu-style($palettes) {
+    @each $type, $palette in $palettes{
+        &--#{$type}{
+          background-color: map-get($palette, bg);
+          font-family: map-get($palette, ff);
+          padding: map-get($palette, pad);
+          @include dimension;
+        }
+    }
+}
+
+.menus {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu {
+    @include menu-style($menu-input);
 }
