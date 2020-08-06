@@ -1,10 +1,11 @@
 .header {
   color: #FFCA28;
-  background-color: #319678;
+  background-color: #368062;
 }
 .header__heading {
+  font-size: 3em;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .menus {
@@ -19,6 +20,8 @@
 .menu--note {
   background-color: #e4d5ce;
   font-family: Arial;
+  font-style: italic;
+  color: black;
   width: 35%;
   padding-top: 15em;
   padding-bottom: 15em;
@@ -27,6 +30,8 @@
 .menu--chic {
   background-color: white;
   font-family: "Bookman old Style";
+  font-style: normal;
+  color: #ca7906;
   width: 35%;
   padding-top: 15em;
   padding-bottom: 15em;
@@ -35,6 +40,8 @@
 .menu--delice {
   background-color: white;
   font-family: Georgia;
+  font-style: italic;
+  color: #0ac9e1;
   width: 35%;
   padding-top: 15em;
   padding-bottom: 15em;
@@ -43,10 +50,60 @@
 .menu--palette {
   background-color: white;
   font-family: "Times New Roman";
+  font-style: italic;
+  color: #37d00b;
   width: 35%;
   padding-top: 15em;
   padding-bottom: 15em;
   text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+i {
+  position: relative;
+  top: 20px;
+}
+
+article p {
+  font-size: 2em;
+}
+
+.next {
+  display: flex;
+  justify-content: space-around;
+  background-color: #368062;
+  color: #FFCA28;
+  margin: auto;
+  width: 20%;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+.next__p {
+  margin: 10px 0px 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFCA28;
+}
+
+.footer {
+  color: #FFCA28;
+  background-color: #368062;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.footer__mention {
+  margin: 10px 0px 10px 15px;
+  font-size: 1.5em;
+}
+.footer__contact {
+  margin: 10px 15px 10px 0px;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
