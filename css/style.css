@@ -7,7 +7,19 @@
 }
 @font-face {
   font-family: "KaushanScript";
-  src: url("../fonts/Kaushan/KaushanScript-Regular.otf");
+  src: url("../fonts/kaushan/KaushanScript-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreatVibes";
+  src: url("../fonts/greatvibes/GreatVibes-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/sofia/Sofia-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +41,7 @@
   justify-content: space-around;
 }
 
-.menu--note {
+.acceuil--note {
   background-color: #e4d5ce;
   font-family: "action_manbold";
   font-style: oblique;
@@ -39,14 +51,14 @@
   padding-bottom: 15em;
   text-align: center;
 }
-.menu--note__heading {
+.acceuil--note__heading {
   background: black;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.menu--chic {
+.acceuil--chic {
   background-color: white;
-  font-family: "Bookman old Style";
+  font-family: "GreatVibes";
   font-style: bold;
   color: #edac1f;
   width: 35%;
@@ -54,12 +66,12 @@
   padding-bottom: 15em;
   text-align: center;
 }
-.menu--chic__heading {
+.acceuil--chic__heading {
   background: linear-gradient(to right, #edac1f, #624df1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.menu--delice {
+.acceuil--delice {
   background-color: white;
   font-family: "KaushanScript";
   font-style: oblique;
@@ -69,14 +81,14 @@
   padding-bottom: 15em;
   text-align: center;
 }
-.menu--delice__heading {
+.acceuil--delice__heading {
   background: linear-gradient(to right, #0e11be, #0ac9e1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.menu--palette {
+.acceuil--palette {
   background-color: white;
-  font-family: "Times New Roman";
+  font-family: "Sofia";
   font-style: oblique;
   color: #1a9811;
   width: 35%;
@@ -84,14 +96,14 @@
   padding-bottom: 15em;
   text-align: center;
 }
-.menu--palette__heading {
+.acceuil--palette__heading {
   background: linear-gradient(to right, #1a9811, #d2f174);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 i {
@@ -100,7 +112,7 @@ i {
 }
 
 article p {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bolder;
 }
 
@@ -137,6 +149,48 @@ a {
 .footer__contact {
   margin: 10px 15px 10px 0px;
   font-size: 1.5em;
+}
+
+section {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+ul:nth-last-child(-n+1) {
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-size: 2em;
+  padding: 30px;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+.menu__note {
+  font-family: "action_manbold";
+}
+.menu__chic {
+  font-family: "GreatVibes";
+}
+.menu__delice {
+  font-family: "KaushanScript";
+}
+.menu__palette {
+  font-family: "Sofia";
+}
+.menu--note {
+  background: #e4d5ce;
 }
 
 /*# sourceMappingURL=style.css.map */

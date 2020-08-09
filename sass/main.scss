@@ -12,26 +12,46 @@
 
 @font-face {
     font-family: 'KaushanScript';
-    src: url('../fonts/Kaushan/KaushanScript-Regular.otf');
+    src: url('../fonts/kaushan/KaushanScript-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('../fonts/greatvibes/GreatVibes-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-  
+@font-face {
+    font-family: 'Sofia';
+    src: url('../fonts/sofia/Sofia-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $color-primary: #368062;
 $color-secondary: #FFCA28;
 $bg-note: #e4d5ce;
 $color-bg: white;
+
 $font-size: 0.5em, 1em, 1.5em, 2em, 2.5em, 3em;
+$font-note: 'action_manbold';
+$font-chic: 'GreatVibes';
+$font-delice: 'KaushanScript';
+$font-palette: 'Sofia';
+
 $margin-top: 10px;
 $margin-bottom: 10px;
 $margin-right: 0px;
 $margin-left: 0px;
+
 $color-note: black;
 $color-chic: #edac1f;
 $color-delice: #0ac9e1;
 $color-palette: #1a9811;
+
 $grad-note: linear-gradient(to right, $color-chic, #624df1);
 $grad-delice: linear-gradient(to right, #0e11be, $color-delice);
 $grad-palette: linear-gradient(to right, $color-palette, #d2f174);
@@ -39,28 +59,28 @@ $grad-palette: linear-gradient(to right, $color-palette, #d2f174);
 $menu-input: (
   note: (
     bg: $bg-note,
-    ff: 'action_manbold',
+    ff: $font-note,
     fs: oblique,
     col: $color-note,
     grad: black,
   ),
   chic: (
     bg: $color-bg,
-    ff: 'Bookman old Style',
+    ff: $font-chic,
     fs: bold,
     col: $color-chic,
     grad: $grad-note,
   ),
   delice: (
     bg: $color-bg,
-    ff: 'KaushanScript',
+    ff: $font-delice,
     fs: oblique,
     col: $color-delice,
     grad: $grad-delice,
   ),
   palette: (
     bg: $color-bg,
-    ff: 'Times New Roman',
+    ff: $font-palette,
     fs: oblique,
     col: $color-palette,
     grad: $grad-palette,
@@ -78,7 +98,7 @@ $menu-input: (
     text-align: center;
 }
 
-@mixin menu-style($palettes) {
+@mixin acceuil-style($palettes) {
     @each $type, $palette in $palettes{
         &--#{$type}{
           background-color: map-get($palette, bg);
@@ -91,6 +111,14 @@ $menu-input: (
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
             }
+        }
+    }
+}
+
+@mixin font-menu($palettes) {
+    @each $type, $palette in $palettes{
+        &__#{$type}{
+            font-family: map-get($palette, ff);
         }
     }
 }
@@ -113,12 +141,12 @@ $menu-input: (
     justify-content: space-around;
 }
 
-.menu {
-    @include menu-style($menu-input);
+.acceuil {
+    @include acceuil-style($menu-input);
 }
 
 h2 {
-    font-size: nth($font-size, 3);
+    font-size: nth($font-size, 4);
 }
 
 i {
@@ -127,7 +155,7 @@ i {
 }
 
 article p {
-    font-size: nth($font-size, 4);
+    font-size: nth($font-size, 5);
     font-weight: bolder;
 }
 
@@ -163,5 +191,38 @@ a {
     &__contact {
         @include margin($mr: 15px);
         font-size: nth($font-size, 3);
+    }
+}
+
+section {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: nth($font-size, 2);
+}
+
+ul:nth-last-child(-n+1) {
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: nth($font-size, 4);
+    padding: 30px;
+}
+
+h4 {
+    font-size: nth($font-size, 3);
+}
+
+.menu {
+    @include font-menu ($menu-input);
+    &--note {
+        background: $bg-note;
     }
 }
