@@ -48,13 +48,13 @@ $margin-right: 0px;
 $margin-left: 0px;
 
 $color-note: black;
-$color-chic: #edac1f;
-$color-delice: #0ac9e1;
-$color-palette: #1a9811;
+$color-chic: #C77412;
+$color-delice: #0887FB;
+$color-palette: #3E923A;
 
-$grad-note: linear-gradient(to right, $color-chic, #624df1);
-$grad-delice: linear-gradient(to right, #0e11be, $color-delice);
-$grad-palette: linear-gradient(to right, $color-palette, #d2f174);
+$grad-chic: linear-gradient(to right, $color-chic, #8F5AFF);
+$grad-delice: linear-gradient(to right, #0229DD, $color-delice);
+$grad-palette: linear-gradient(to right, $color-palette, #BEFF7F);
 
 $menu-input: (
   note: (
@@ -69,7 +69,7 @@ $menu-input: (
     ff: $font-chic,
     fs: bold,
     col: $color-chic,
-    grad: $grad-note,
+    grad: $grad-chic,
   ),
   delice: (
     bg: $color-bg,
@@ -85,6 +85,12 @@ $menu-input: (
     col: $color-palette,
     grad: $grad-palette,
   )
+);
+
+$chic-parti: (
+    1: $color-chic, 
+    2: #A56799, 
+    3: #6E4CCC,
 );
 
 @mixin margin ($mt: $margin-top, $mr: $margin-right, $mb: $margin-bottom, $ml: $margin-left){
@@ -119,6 +125,19 @@ $menu-input: (
     @each $type, $palette in $palettes{
         &__#{$type}{
             font-family: map-get($palette, ff);
+            &__h3{
+                background: map-get($palette, grad);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+@mixin chic-parti($palettes) {
+    @each $key, $palette in $palettes {
+        &--#{$key}{
+            color: map-get($palettes , $key);
         }
     }
 }
@@ -195,7 +214,7 @@ a {
 }
 
 section {
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin: auto;
 }
@@ -204,6 +223,7 @@ ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    padding-right: 2em;
     font-size: nth($font-size, 2);
 }
 
@@ -212,7 +232,7 @@ ul:nth-last-child(-n+1) {
 }
 
 h3 {
-    font-size: nth($font-size, 4);
+    font-size: nth($font-size, 5);
     padding: 30px;
 }
 
@@ -220,9 +240,18 @@ h4 {
     font-size: nth($font-size, 3);
 }
 
+h5 {
+    font-size: nth($font-size, 4);
+    padding: 30px;
+}
+
 .menu {
     @include font-menu ($menu-input);
     &--note {
         background: $bg-note;
     }
+}
+
+.menu__chic {
+    @include chic-parti($chic-parti);
 }
