@@ -1,0 +1,10 @@
+@mixin margin ($mt: $margin-top, $mr: $margin-right, $mb: $margin-bottom, $ml: $margin-left){
+    margin: $mt $mr $mb $ml;
+}
+
+@mixin dimension {
+    width: 35%;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+}

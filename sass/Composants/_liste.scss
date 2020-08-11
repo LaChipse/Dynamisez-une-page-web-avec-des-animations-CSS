@@ -1,0 +1,11 @@
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 2em;
+    font-size: nth($font-size, 2);
+}
+
+ul:nth-last-child(-n+1) {
+    padding-bottom: 50px;
+}

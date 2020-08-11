@@ -1,0 +1,37 @@
+
+$menu-input: (
+    note: (
+      bg: $bg-note,
+      ff: $font-note,
+      fs: oblique,
+      col: $color-note,
+      grad: black,
+    ),
+    chic: (
+      bg: $color-bg,
+      ff: $font-chic,
+      fs: bold,
+      col: $color-chic,
+      grad: $grad-chic,
+    ),
+    delice: (
+      bg: $color-bg,
+      ff: $font-delice,
+      fs: oblique,
+      col: $color-delice,
+      grad: $grad-delice,
+    ),
+    palette: (
+      bg: $color-bg,
+      ff: $font-palette,
+      fs: oblique,
+      col: $color-palette,
+      grad: $grad-palette,
+    )
+  );
+  
+$chic-parti: (
+    1: $color-chic, 
+    2: #A56799, 
+    3: #6E4CCC,
+);

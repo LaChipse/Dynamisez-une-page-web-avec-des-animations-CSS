@@ -1,0 +1,13 @@
+.next {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primary;
+    color: $color-secondary;
+    margin: auto;
+    width: 20%;
+    font-size: nth($font-size, 3);
+    border-radius: 10px;
+    &__p {
+        @include margin
+    }
+}

@@ -1,3 +1,8 @@
+.container {
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+}
+
 @font-face {
   font-family: "action_manbold";
   src: url("../fonts/actionman/Action_Man_Bold-webfont.eot");
@@ -31,6 +36,87 @@
   font-size: 3em;
   text-align: center;
   padding: 0.3em;
+}
+
+.footer {
+  color: #FFCA28;
+  background-color: #368062;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.footer__mention {
+  margin: 10px 0px 10px 15px;
+  font-size: 1.5em;
+}
+.footer__contact {
+  margin: 10px 15px 10px 0px;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2.5em;
+  padding: 30px;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 2em;
+  padding: 30px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 2em;
+  font-size: 1em;
+}
+
+ul:nth-last-child(-n+1) {
+  padding-bottom: 50px;
+}
+
+article p {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+section {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.next {
+  display: flex;
+  justify-content: space-around;
+  background-color: #368062;
+  color: #FFCA28;
+  margin: auto;
+  width: 20%;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+.next__p {
+  margin: 10px 0px 10px 0px;
+}
+
+i {
+  position: relative;
+  top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFCA28;
 }
 
 .menus {
@@ -100,87 +186,6 @@
   background: linear-gradient(to right, #3E923A, #BEFF7F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-i {
-  position: relative;
-  top: 20px;
-}
-
-article p {
-  font-size: 2.5em;
-  font-weight: bolder;
-}
-
-.next {
-  display: flex;
-  justify-content: space-around;
-  background-color: #368062;
-  color: #FFCA28;
-  margin: auto;
-  width: 20%;
-  font-size: 1.5em;
-  border-radius: 10px;
-}
-.next__p {
-  margin: 10px 0px 10px 0px;
-}
-
-a {
-  text-decoration: none;
-  color: #FFCA28;
-}
-
-.footer {
-  color: #FFCA28;
-  background-color: #368062;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2em;
-}
-.footer__mention {
-  margin: 10px 0px 10px 15px;
-  font-size: 1.5em;
-}
-.footer__contact {
-  margin: 10px 15px 10px 0px;
-  font-size: 1.5em;
-}
-
-section {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding-right: 2em;
-  font-size: 1em;
-}
-
-ul:nth-last-child(-n+1) {
-  padding-bottom: 50px;
-}
-
-h3 {
-  font-size: 2.5em;
-  padding: 30px;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 2em;
-  padding: 30px;
 }
 
 .menu__note {

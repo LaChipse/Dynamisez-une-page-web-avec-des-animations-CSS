@@ -1,0 +1,37 @@
+@mixin acceuil-style($palettes) {
+    @each $type, $palette in $palettes{
+        &--#{$type}{
+          background-color: map-get($palette, bg);
+          font-family: map-get($palette, ff);
+          font-style: map-get($palette , fs);
+          color: map-get($palette, col);
+          @include dimension;
+            &__heading {
+                background: map-get($palette, grad);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+@mixin font-menu($palettes) {
+    @each $type, $palette in $palettes{
+        &__#{$type}{
+            font-family: map-get($palette, ff);
+            &__h3{
+                background: map-get($palette, grad);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+@mixin chic-parti($palettes) {
+    @each $key, $palette in $palettes {
+        &--#{$key}{
+            color: map-get($palettes , $key);
+        }
+    }
+}

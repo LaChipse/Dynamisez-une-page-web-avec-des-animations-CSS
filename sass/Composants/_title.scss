@@ -1,0 +1,17 @@
+h2 {
+    font-size: nth($font-size, 4);
+}
+
+h3 {
+    font-size: nth($font-size, 5);
+    padding: 30px;
+}
+
+h4 {
+    font-size: nth($font-size, 3);
+}
+
+h5 {
+    font-size: nth($font-size, 4);
+    padding: 30px;
+}

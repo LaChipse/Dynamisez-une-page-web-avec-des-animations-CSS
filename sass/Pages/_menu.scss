@@ -1,0 +1,6 @@
+.menu {
+    @include font-menu ($menu-input);
+    &--note {
+        background: $bg-note;
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    color: $color-secondary;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    &__mention {
+        @include margin($ml: 15px);
+        font-size: nth($font-size, 3);
+    }
+    &__contact {
+        @include margin($mr: 15px);
+        font-size: nth($font-size, 3);
+    }
+}
