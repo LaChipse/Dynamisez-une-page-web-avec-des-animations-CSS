@@ -19,6 +19,7 @@
     @each $type, $palette in $palettes{
         &__#{$type}{
             font-family: map-get($palette, ff);
+            background-color: map-get($palette , bg);
             &__h3{
                 background: map-get($palette, grad);
                 -webkit-text-fill-color: transparent;

@@ -1,9 +1,14 @@
+div a {
+padding: 3em;
+margin: 2em;
+}
+
 article p {
     font-size: nth($font-size, 5);
     font-weight: bolder;
 }
 
-section {
+div {
     width: 50%;
     text-align: center;
     margin: auto;

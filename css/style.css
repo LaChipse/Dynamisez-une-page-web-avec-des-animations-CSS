@@ -1,8 +1,3 @@
-.container {
-  font-family: "Times New Roman", Times, serif;
-  width: 100%;
-}
-
 @font-face {
   font-family: "action_manbold";
   src: url("../fonts/actionman/Action_Man_Bold-webfont.eot");
@@ -28,6 +23,11 @@
   font-weight: normal;
   font-style: normal;
 }
+.container {
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+}
+
 .header {
   color: #FFCA28;
   background-color: #368062;
@@ -84,12 +84,17 @@ ul:nth-last-child(-n+1) {
   padding-bottom: 50px;
 }
 
+div a {
+  padding: 3em;
+  margin: 2em;
+}
+
 article p {
   font-size: 2.5em;
   font-weight: bolder;
 }
 
-section {
+div {
   width: 50%;
   text-align: center;
   margin: auto;
@@ -101,6 +106,7 @@ section {
   background-color: #368062;
   color: #FFCA28;
   margin: auto;
+  margin-top: 1.5em;
   width: 20%;
   font-size: 1.5em;
   border-radius: 10px;
@@ -143,7 +149,7 @@ a {
   -webkit-background-clip: text;
 }
 .acceuil--chic {
-  background-color: white;
+  background-color: #e6e6e6;
   font-family: "GreatVibes";
   font-style: bold;
   color: #C77412;
@@ -158,7 +164,7 @@ a {
   -webkit-background-clip: text;
 }
 .acceuil--delice {
-  background-color: white;
+  background-color: #e6e6e6;
   font-family: "KaushanScript";
   font-style: oblique;
   color: #0887FB;
@@ -173,7 +179,7 @@ a {
   -webkit-background-clip: text;
 }
 .acceuil--palette {
-  background-color: white;
+  background-color: #e6e6e6;
   font-family: "Sofia";
   font-style: oblique;
   color: #3E923A;
@@ -190,6 +196,7 @@ a {
 
 .menu__note {
   font-family: "action_manbold";
+  background-color: #e4d5ce;
 }
 .menu__note__h3 {
   background: black;
@@ -198,6 +205,7 @@ a {
 }
 .menu__chic {
   font-family: "GreatVibes";
+  background-color: #e6e6e6;
 }
 .menu__chic__h3 {
   background: linear-gradient(to right, #C77412, #8F5AFF);
@@ -206,6 +214,7 @@ a {
 }
 .menu__delice {
   font-family: "KaushanScript";
+  background-color: #e6e6e6;
 }
 .menu__delice__h3 {
   background: linear-gradient(to right, #0229DD, #0887FB);
@@ -214,14 +223,12 @@ a {
 }
 .menu__palette {
   font-family: "Sofia";
+  background-color: #e6e6e6;
 }
 .menu__palette__h3 {
   background: linear-gradient(to right, #3E923A, #BEFF7F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-.menu--note {
-  background: #e4d5ce;
 }
 
 .menu__chic--1 {

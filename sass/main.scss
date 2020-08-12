@@ -1,10 +1,10 @@
-@import "./base/container";
-
 @import "./utils/font-face";
 @import "./utils/variables";
 @import "./utils/mixin";
 @import "./utils/maps";
 @import "./utils/fonctions";
+
+@import "./base/container";
 
 @import "./layouts/header";
 @import "./layouts/footer";
