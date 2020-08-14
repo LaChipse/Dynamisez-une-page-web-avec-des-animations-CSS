@@ -5,13 +5,13 @@ $menu-input: (
       ff: $font-note,
       fs: oblique,
       col: $color-note,
-      grad: black,
+      grad: $color-note,
     ),
     chic: (
       bg: $color-bg,
       ff: $font-chic,
       fs: bold,
-      col: $color-chic,
+      col: $color-chic-1,
       grad: $grad-chic,
     ),
     delice: (
@@ -31,7 +31,14 @@ $menu-input: (
   );
   
 $chic-parti: (
-    1: $color-chic, 
-    2: #A56799, 
-    3: #6E4CCC,
+    1: $color-chic-1, 
+    2: $color-chic-2, 
+    3: $color-chic-3,
 );
+
+$color-soulignement: (
+  1: $color-chic-1,
+  2: $color-chic-2,
+  3: $color-chic-3,
+  b: $color-note,
+)

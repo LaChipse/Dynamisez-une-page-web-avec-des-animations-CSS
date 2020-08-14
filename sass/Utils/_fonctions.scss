@@ -5,6 +5,11 @@
           font-family: map-get($palette, ff);
           font-style: map-get($palette , fs);
           color: map-get($palette, col);
+          transform: scale(1);
+          transition: transform 200ms ease-in-out;
+          &:hover {
+              transform: scale(1.05);
+          }
           @include dimension;
             &__heading {
                 background: map-get($palette, grad);
@@ -33,6 +38,14 @@
     @each $key, $palette in $palettes {
         &--#{$key}{
             color: map-get($palettes , $key);
+        }
+    }
+}
+
+@mixin color-soulignement($palettes) {
+    @each $key, $palette in $palettes {
+        &--#{$key}{
+            background-color: map-get($palettes , $key);
         }
     }
 }

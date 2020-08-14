@@ -23,12 +23,15 @@
   font-weight: normal;
   font-style: normal;
 }
-.container {
+body {
+  margin: 0px;
+  padding: 0px;
   font-family: "Times New Roman", Times, serif;
-  width: 100%;
 }
 
 .header {
+  position: relative;
+  bottom: 30px;
   color: #FFCA28;
   background-color: #368062;
 }
@@ -39,11 +42,15 @@
 }
 
 .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
   color: #FFCA28;
   background-color: #368062;
+}
+.footer__element {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
 }
 .footer__mention {
   margin: 10px 0px 10px 20px;
@@ -52,14 +59,23 @@
 .footer__contact {
   margin: 10px 20px 10px 0px;
   font-size: 1.5em;
+  right: 0px;
 }
 
-section {
+.menus, section {
   width: 50%;
   text-align: center;
   margin: auto;
 }
 
+@keyframes soulignement {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 h2 {
   font-size: 1.5em;
 }
@@ -71,6 +87,33 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+  display: inline-block;
+}
+
+.soulignement {
+  position: relative;
+  bottom: 3px;
+  height: 2px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 600ms;
+  background-color: black;
+}
+.soulignement--1 {
+  background-color: #C77412;
+}
+.soulignement--2 {
+  background-color: #A56799;
+}
+.soulignement--3 {
+  background-color: #6E4CCC;
+}
+.soulignement--b {
+  background-color: black;
+}
+
+h4:hover > .soulignement {
+  transform: scalex(1);
 }
 
 h5 {
@@ -97,6 +140,7 @@ ul:nth-last-child(-n+1) {
   color: #FFCA28;
   margin: auto;
   margin-top: 1.5em;
+  margin-bottom: 75px;
   width: 20%;
   font-size: 1.5em;
   border-radius: 10px;
@@ -127,10 +171,16 @@ a {
   font-family: "action_manbold";
   font-style: oblique;
   color: black;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
   width: 35%;
+  margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
+}
+.acceuil--note:hover {
+  transform: scale(1.05);
 }
 .acceuil--note__heading {
   background: black;
@@ -142,10 +192,16 @@ a {
   font-family: "GreatVibes";
   font-style: bold;
   color: #C77412;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
   width: 35%;
+  margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
+}
+.acceuil--chic:hover {
+  transform: scale(1.05);
 }
 .acceuil--chic__heading {
   background: linear-gradient(to right, #C77412, #8F5AFF);
@@ -157,10 +213,16 @@ a {
   font-family: "KaushanScript";
   font-style: oblique;
   color: #0887FB;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
   width: 35%;
+  margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
+}
+.acceuil--delice:hover {
+  transform: scale(1.05);
 }
 .acceuil--delice__heading {
   background: linear-gradient(to right, #0229DD, #0887FB);
@@ -172,10 +234,16 @@ a {
   font-family: "Sofia";
   font-style: oblique;
   color: #3E923A;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
   width: 35%;
+  margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
+}
+.acceuil--palette:hover {
+  transform: scale(1.05);
 }
 .acceuil--palette__heading {
   background: linear-gradient(to right, #3E923A, #BEFF7F);
@@ -186,11 +254,6 @@ a {
 article p {
   font-size: 2em;
   font-weight: bolder;
-}
-
-section a {
-  margin: 1em;
-  padding: 1em;
 }
 
 .menu__note {

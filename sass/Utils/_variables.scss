@@ -15,10 +15,14 @@ $margin-right: 0px;
 $margin-left: 0px;
 
 $color-note: black;
-$color-chic: #C77412;
 $color-delice: #0887FB;
 $color-palette: #3E923A;
+$color-chic-1: #C77412;
+$color-chic-2: #A56799;
+$color-chic-3: #6E4CCC;
 
-$grad-chic: linear-gradient(to right, $color-chic, #8F5AFF);
+$grad-chic: linear-gradient(to right, $color-chic-1, #8F5AFF);
 $grad-delice: linear-gradient(to right, #0229DD, $color-delice);
 $grad-palette: linear-gradient(to right, $color-palette, #BEFF7F);
+
+$delay: 600ms;
