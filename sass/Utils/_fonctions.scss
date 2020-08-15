@@ -5,10 +5,10 @@
           font-family: map-get($palette, ff);
           font-style: map-get($palette , fs);
           color: map-get($palette, col);
-          transform: scale(1);
-          transition: transform 200ms ease-in-out;
           &:hover {
-              transform: scale(1.05);
+            h2, p, i {
+            animation: zoom 200ms ease-in-out both;
+            }
           }
           @include dimension;
             &__heading {
@@ -25,6 +25,12 @@
         &__#{$type}{
             font-family: map-get($palette, ff);
             background-color: map-get($palette , bg);
+            margin: auto;
+            &:active {
+                & > div, > h3, >i {
+                animation: zoom 200ms ease-in-out both;
+                }
+              }
             &__h3{
                 background: map-get($palette, grad);
                 -webkit-text-fill-color: transparent;

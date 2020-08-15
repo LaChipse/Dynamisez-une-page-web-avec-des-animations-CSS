@@ -23,6 +23,32 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes headshake {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.25);
+    opacity: 0.7;
+  }
+}
+@keyframes point {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -56,10 +82,16 @@ body {
   margin: 10px 0px 10px 20px;
   font-size: 1.5em;
 }
+.footer__mention:hover {
+  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+}
 .footer__contact {
   margin: 10px 20px 10px 0px;
   font-size: 1.5em;
   right: 0px;
+}
+.footer__contact:hover {
+  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
 .menus, section {
@@ -147,11 +179,42 @@ ul:nth-last-child(-n+1) {
 }
 .next__p {
   margin: 10px 0px 10px 0px;
+  opacity: 1;
+  transition: opacity 600ms;
 }
 
-i {
+.point {
+  position: absolute;
+  display: flex;
+  top: 195%;
+  justify-content: space-between;
+  width: 10%;
+}
+.point__point {
+  opacity: 0;
+  font-size: 5em;
+  color: #FFCA28;
+}
+
+aside:hover .next__p {
+  opacity: 0;
+}
+aside:hover .point__point {
+  animation: point 800ms both infinite ease-in-out alternate;
+}
+aside:hover .point__point--1 {
+  animation-delay: 200ms;
+}
+aside:hover .point__point--2 {
+  animation-delay: 400ms;
+}
+aside:hover .point__point--3 {
+  animation-delay: 600ms;
+}
+
+.menu__note i {
   position: relative;
-  top: 20px;
+  top: 50px;
 }
 
 a {
@@ -171,16 +234,14 @@ a {
   font-family: "action_manbold";
   font-style: oblique;
   color: black;
-  transform: scale(1);
-  transition: transform 200ms ease-in-out;
   width: 35%;
   margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
 }
-.acceuil--note:hover {
-  transform: scale(1.05);
+.acceuil--note:hover h2, .acceuil--note:hover p, .acceuil--note:hover i {
+  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--note__heading {
   background: black;
@@ -192,16 +253,14 @@ a {
   font-family: "GreatVibes";
   font-style: bold;
   color: #C77412;
-  transform: scale(1);
-  transition: transform 200ms ease-in-out;
   width: 35%;
   margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
 }
-.acceuil--chic:hover {
-  transform: scale(1.05);
+.acceuil--chic:hover h2, .acceuil--chic:hover p, .acceuil--chic:hover i {
+  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--chic__heading {
   background: linear-gradient(to right, #C77412, #8F5AFF);
@@ -213,16 +272,14 @@ a {
   font-family: "KaushanScript";
   font-style: oblique;
   color: #0887FB;
-  transform: scale(1);
-  transition: transform 200ms ease-in-out;
   width: 35%;
   margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
 }
-.acceuil--delice:hover {
-  transform: scale(1.05);
+.acceuil--delice:hover h2, .acceuil--delice:hover p, .acceuil--delice:hover i {
+  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--delice__heading {
   background: linear-gradient(to right, #0229DD, #0887FB);
@@ -234,16 +291,14 @@ a {
   font-family: "Sofia";
   font-style: oblique;
   color: #3E923A;
-  transform: scale(1);
-  transition: transform 200ms ease-in-out;
   width: 35%;
   margin: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
   text-align: center;
 }
-.acceuil--palette:hover {
-  transform: scale(1.05);
+.acceuil--palette:hover h2, .acceuil--palette:hover p, .acceuil--palette:hover i {
+  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--palette__heading {
   background: linear-gradient(to right, #3E923A, #BEFF7F);
@@ -259,6 +314,10 @@ article p {
 .menu__note {
   font-family: "action_manbold";
   background-color: #e4d5ce;
+  margin: auto;
+}
+.menu__note:active > div, .menu__note:active > h3, .menu__note:active > i {
+  animation: zoom 200ms ease-in-out both;
 }
 .menu__note__h3 {
   background: black;
@@ -268,6 +327,10 @@ article p {
 .menu__chic {
   font-family: "GreatVibes";
   background-color: #e6e6e6;
+  margin: auto;
+}
+.menu__chic:active > div, .menu__chic:active > h3, .menu__chic:active > i {
+  animation: zoom 200ms ease-in-out both;
 }
 .menu__chic__h3 {
   background: linear-gradient(to right, #C77412, #8F5AFF);
@@ -277,6 +340,10 @@ article p {
 .menu__delice {
   font-family: "KaushanScript";
   background-color: #e6e6e6;
+  margin: auto;
+}
+.menu__delice:active > div, .menu__delice:active > h3, .menu__delice:active > i {
+  animation: zoom 200ms ease-in-out both;
 }
 .menu__delice__h3 {
   background: linear-gradient(to right, #0229DD, #0887FB);
@@ -286,6 +353,10 @@ article p {
 .menu__palette {
   font-family: "Sofia";
   background-color: #e6e6e6;
+  margin: auto;
+}
+.menu__palette:active > div, .menu__palette:active > h3, .menu__palette:active > i {
+  animation: zoom 200ms ease-in-out both;
 }
 .menu__palette__h3 {
   background: linear-gradient(to right, #3E923A, #BEFF7F);

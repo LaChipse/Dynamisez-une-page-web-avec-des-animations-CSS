@@ -11,10 +11,16 @@
     &__mention {
         @include margin($ml: 20px);
         font-size: nth($font-size, 3);
+        &:hover {
+            animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 3;
+        }
     }
     &__contact {
         @include margin($mr: 20px);
         font-size: nth($font-size, 3);
         right: 0px;
+        &:hover {
+            animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 3;
+        }
     }
 }

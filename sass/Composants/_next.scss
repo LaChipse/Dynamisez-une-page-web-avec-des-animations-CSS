@@ -10,6 +10,39 @@
     font-size: nth($font-size, 3);
     border-radius: 10px;
     &__p {
-        @include margin
+        @include margin;
+        opacity: 1;
+        transition: opacity $delay;
+    }
+}
+
+.point {
+    position: absolute;
+    display: flex;
+    top: 195%;
+    justify-content: space-between;
+    width: 10%;
+    &__point {
+    opacity: 0;
+    font-size: 5em;
+    color: $color-secondary;
+    }
+}
+
+aside {
+    &:hover {
+        & .next__p {
+            opacity: 0;
+        }
+        & .point {
+            &__point {
+            animation: point 800ms both infinite ease-in-out alternate;
+                @for $i from 1 through $numb-point {
+                    &--#{$i} {
+                        animation-delay: 200ms * $i;
+                    }
+                }
+            }
+        }
     }
 }
