@@ -1,34 +1,34 @@
 
 $menu-input: (
-    note: (
-      bg: $bg-note,
-      ff: $font-note,
-      fs: oblique,
-      col: $color-note,
-      grad: $color-note,
-    ),
-    chic: (
-      bg: $color-bg,
-      ff: $font-chic,
-      fs: bold,
-      col: $color-chic-1,
-      grad: $grad-chic,
-    ),
-    delice: (
-      bg: $color-bg,
-      ff: $font-delice,
-      fs: oblique,
-      col: $color-delice,
-      grad: $grad-delice,
-    ),
-    palette: (
-      bg: $color-bg,
-      ff: $font-palette,
-      fs: oblique,
-      col: $color-palette,
-      grad: $grad-palette,
-    )
-  );
+  note: (
+    bg: $bg-note,
+    ff: $font-note,
+    fs: oblique,
+    col: $color-note,
+    grad: $color-note,
+  ),
+  chic: (
+    bg: $color-bg,
+    ff: $font-chic,
+    fs: bold,
+    col: $color-chic-1,
+    grad: $grad-chic,
+  ),
+  delice: (
+    bg: $color-bg,
+    ff: $font-delice,
+    fs: oblique,
+    col: $color-delice-2,
+    grad: $grad-delice,
+  ),
+  palette: (
+    bg: $color-bg,
+    ff: $font-palette,
+    fs: oblique,
+    col: $color-palette,
+    grad: $grad-palette,
+  )
+);
   
 $chic-parti: (
     1: $color-chic-1, 
@@ -36,9 +36,104 @@ $chic-parti: (
     3: $color-chic-3,
 );
 
-$color-soulignement: (
-  1: $color-chic-1,
-  2: $color-chic-2,
-  3: $color-chic-3,
-  b: $color-note,
+$style-soulignement: (
+  note1: (
+    bg: $color-note,
+    wth: nth($width, 1)
+  ),
+  note2: (
+    bg: $color-note,
+    wth: nth($width, 4)
+  ),
+  note3: (
+    bg: $color-note,
+    wth: nth($width, 6)
+  ),
+  chic1: (
+    bg: $color-chic-1,
+    wth: nth($width, 6)
+  ),
+  chic2: (
+    bg: $color-chic-2,
+    wth: nth($width, 4)
+  ),
+  chic3: (
+    bg: $color-chic-3,
+    wth: nth($width, 4)
+  ),
+  palette1: (
+    bg: $color-note,
+    wth: nth($width, 1)
+  ),
+  palette2: (
+    bg: $color-note,
+    wth: nth($width, 6)
+  ),
+  palette3: (
+    bg: $color-note,
+    wth: nth($width, 7)
+  ),
+  delice1: (
+    bg: $color-note,
+    wth: nth($width, 7)
+  ),
+  delice2: (
+    bg: $color-note,
+    wth: nth($width, 6)
+  ),
+  delice3: (
+    bg: $color-note,
+    wth: nth($width, 6)
+  ),
+);
+
+$trait-h4: (
+  note: (
+    bg: $color-note,
+    border: 0.1px solid $color-note,
+    top: 15px,
+    bot: 18px,
+  ),
+  chic1: (
+    bg: $color-chic-1,
+    border: 0.1px solid $color-chic-1,
+    top: 15px,
+    bot: 20px,
+  ),
+  chic2: (
+    bg: $color-chic-2,
+    border: 0.1px solid $color-chic-2,
+    top: 15px,
+    bot: 20px,
+  ),
+  chic3: (
+    bg: $color-chic-3,
+    border: 0.1px solid $color-chic-3,
+    top: 15px,
+    bot: 20px,
+  ),
+  delice1: (
+    bg: $color-delice-1,
+    border: 0.1px solid $color-delice-1,
+    top: 20px,
+    bot: 20px,
+  ),
+  delice2: (
+    bg: $color-delice-2,
+    border: 0.1px solid $color-delice-2,
+    top: 20px,
+    bot: 20px,
+  ),
+  delice3: (
+    bg: $color-delice-3,
+    border: 0.1px solid $color-delice-3,
+    top: 20px,
+    bot: 20px,
+  ),
+  palette: (
+    bg: $grad-palette,
+    border: display,
+    top: 25px,
+    bot: 17px,
+  ),
 )

@@ -21,11 +21,10 @@
 }
 
 @mixin font-menu($palettes) {
-    @each $type, $palette in $palettes{
-        &__#{$type}{
+    @each $key, $palette in $palettes{
+        &__#{$key}{
             font-family: map-get($palette, ff);
             background-color: map-get($palette , bg);
-            margin: auto;
             &:active {
                 & > div, > h3, >i {
                 animation: zoom 200ms ease-in-out both;
@@ -48,10 +47,42 @@
     }
 }
 
-@mixin color-soulignement($palettes) {
+@mixin style-soulignement($palettes) {
     @each $key, $palette in $palettes {
-        &--#{$key}{
-            background-color: map-get($palettes , $key);
+        &__#{$key}{
+            border-color: map-get($palette , bg);
+            width: map-get($palette , wth);
+        }
+    }
+}
+
+@mixin trait-h4($palettes) {
+    @each $key, $palette in $palettes {
+        &__#{$key}{
+            &::before {
+                content: "";
+                display: flex;
+                position: relative;
+                width: nth($width, 5); 
+                margin-left: 40px;
+                height: 2px;
+                background: map-get($palette, bg);
+                top: map-get($palette, top);
+                border: map-get($palette, border);
+                border-radius: 100px;
+            }
+            &::after {
+                content: "";
+                display: flex;
+                position: relative;
+                width: nth($width, 5); 
+                height: 2px;
+                background: map-get($palette, bg);
+                bottom: map-get($palette, bot);
+                left: 70%;
+                border: map-get($palette, border);
+                border-radius: 100px;
+            }
         }
     }
 }
