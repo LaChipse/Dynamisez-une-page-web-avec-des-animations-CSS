@@ -294,7 +294,7 @@ h4:hover + .soulignement {
   width: 25%;
   margin-left: 40px;
   height: 2px;
-  background: linear-gradient(to right, #3E923A, 30%, #BEFF7F);
+  background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   top: 25px;
   border: display;
   border-radius: 100px;
@@ -305,7 +305,7 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
-  background: linear-gradient(to right, #3E923A, 30%, #BEFF7F);
+  background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   bottom: 17px;
   left: 70%;
   border: display;
@@ -397,45 +397,32 @@ ul:nth-last-child(-n+1) {
   justify-content: space-around;
   background-color: #368062;
   color: #FFCA28;
+  width: 17%;
   margin: auto;
   margin-top: 1.5em;
   margin-bottom: 75px;
-  width: 20%;
   font-size: 1.5em;
   border-radius: 10px;
 }
 .next__p {
-  margin: 10px 0px 10px 0px;
+  margin: 0px 20px 10px 20px;
   opacity: 1;
   transition: opacity 600ms;
 }
 
 .point {
-  position: absolute;
-  top: 1175px;
-  display: flex;
-  justify-content: space-between;
-  width: 10%;
-}
-.point__point {
   opacity: 0;
-  font-size: 5em;
+  font-size: 1.5em;
   color: #FFCA28;
-}
-
-aside:hover .next__p {
-  opacity: 0;
-}
-aside:hover .point__point {
   animation: point 800ms both infinite ease-in-out alternate;
 }
-aside:hover .point__point--1 {
+.point--1 {
   animation-delay: 200ms;
 }
-aside:hover .point__point--2 {
+.point--2 {
   animation-delay: 400ms;
 }
-aside:hover .point__point--3 {
+.point--3 {
   animation-delay: 600ms;
 }
 
@@ -529,7 +516,7 @@ a {
   animation: zoom 200ms ease-in-out both;
 }
 .acceuil--palette__heading {
-  background: linear-gradient(to right, #3E923A, 30%, #BEFF7F);
+  background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -548,9 +535,6 @@ article p {
   font-family: "action_manbold";
   background-color: #e4d5ce;
 }
-.menu__note:active > div, .menu__note:active > h3, .menu__note:active > i {
-  animation: zoom 200ms ease-in-out both;
-}
 .menu__note__h3 {
   background: black;
   -webkit-text-fill-color: transparent;
@@ -559,9 +543,6 @@ article p {
 .menu__chic {
   font-family: "GreatVibes";
   background-color: #e6e6e6;
-}
-.menu__chic:active > div, .menu__chic:active > h3, .menu__chic:active > i {
-  animation: zoom 200ms ease-in-out both;
 }
 .menu__chic__h3 {
   background: linear-gradient(to right, #D8852E, 50%, #A466C7, #8F5AFF);
@@ -572,9 +553,6 @@ article p {
   font-family: "KaushanScript";
   background-color: #e6e6e6;
 }
-.menu__delice:active > div, .menu__delice:active > h3, .menu__delice:active > i {
-  animation: zoom 200ms ease-in-out both;
-}
 .menu__delice__h3 {
   background: linear-gradient(to right, #0431DF, 40%, #00B3F9);
   -webkit-text-fill-color: transparent;
@@ -584,11 +562,8 @@ article p {
   font-family: "Sofia";
   background-color: #e6e6e6;
 }
-.menu__palette:active > div, .menu__palette:active > h3, .menu__palette:active > i {
-  animation: zoom 200ms ease-in-out both;
-}
 .menu__palette__h3 {
-  background: linear-gradient(to right, #3E923A, 30%, #BEFF7F);
+  background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }

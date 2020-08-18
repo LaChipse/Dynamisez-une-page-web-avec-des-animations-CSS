@@ -25,11 +25,6 @@
         &__#{$key}{
             font-family: map-get($palette, ff);
             background-color: map-get($palette , bg);
-            &:active {
-                & > div, > h3, >i {
-                animation: zoom 200ms ease-in-out both;
-                }
-              }
             &__h3{
                 background: map-get($palette, grad);
                 -webkit-text-fill-color: transparent;

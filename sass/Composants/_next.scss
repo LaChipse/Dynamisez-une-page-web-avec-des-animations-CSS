@@ -3,46 +3,27 @@
     justify-content: space-around;
     background-color: $color-primary;
     color: $color-secondary;
+    width: 17%;
     margin: auto;
     margin-top: 1.5em;
     margin-bottom: 75px;
-    width: 20%;
     font-size: nth($font-size, 3);
     border-radius: 10px;
     &__p {
-        @include margin;
+        @include margin($mt: 0px, $mr: 20px, $ml: 20px);
         opacity: 1;
         transition: opacity $delay;
     }
 }
 
 .point {
-    position: absolute;
-    top: 1175px;
-    display: flex;  
-    justify-content: space-between;
-    width: 10%;
-    &__point {
     opacity: 0;
-    font-size: 5em;
+    font-size: 1.5em;
     color: $color-secondary;
-    }
-}
-
-aside {
-    &:hover {
-        & .next__p {
-            opacity: 0;
+    animation: point 800ms both infinite ease-in-out alternate;
+        @for $i from 1 through $numb-point {
+             &--#{$i} {
+            animation-delay: 200ms * $i;
+             }
         }
-        & .point {
-            &__point {
-                animation: point 800ms both infinite ease-in-out alternate;
-                @for $i from 1 through $numb-point {
-                    &--#{$i} {
-                     animation-delay: 200ms * $i;
-                    }
-                }  
-            }
-        }
-    }
 }
