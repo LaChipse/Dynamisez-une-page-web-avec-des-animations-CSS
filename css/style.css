@@ -412,8 +412,8 @@ ul:nth-last-child(-n+1) {
 
 .point {
   position: absolute;
+  top: 1175px;
   display: flex;
-  top: 195%;
   justify-content: space-between;
   width: 10%;
 }

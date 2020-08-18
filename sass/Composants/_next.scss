@@ -18,8 +18,8 @@
 
 .point {
     position: absolute;
-    display: flex;
-    top: 195%;
+    top: 1175px;
+    display: flex;  
     justify-content: space-between;
     width: 10%;
     &__point {
@@ -36,12 +36,12 @@ aside {
         }
         & .point {
             &__point {
-            animation: point 800ms both infinite ease-in-out alternate;
+                animation: point 800ms both infinite ease-in-out alternate;
                 @for $i from 1 through $numb-point {
                     &--#{$i} {
-                        animation-delay: 200ms * $i;
+                     animation-delay: 200ms * $i;
                     }
-                }
+                }  
             }
         }
     }
