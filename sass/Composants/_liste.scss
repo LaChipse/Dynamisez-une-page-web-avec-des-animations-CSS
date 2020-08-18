@@ -2,6 +2,8 @@ ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    margin-top: 0px;
+    padding-top: 0px;
     padding-right: 2em;
     font-size: nth($font-size, 2);
 }

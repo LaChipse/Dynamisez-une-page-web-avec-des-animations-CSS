@@ -102,12 +102,6 @@ body {
   animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
-section {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-}
-
 h2 {
   font-size: 1.5em;
 }
@@ -119,6 +113,7 @@ h3 {
 
 h4 {
   font-size: 1.5em;
+  margin-bottom: 15px;
 }
 h4:hover + .soulignement {
   transform: scalex(1);
@@ -323,7 +318,7 @@ h4:hover + .soulignement {
 .soulignement {
   position: relative;
   margin: auto;
-  bottom: 35px;
+  bottom: 22px;
   transform-origin: left;
   transform: scaleX(0);
   transition: transform 600ms;
@@ -387,6 +382,8 @@ ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin-top: 0px;
+  padding-top: 0px;
   padding-right: 2em;
   font-size: 1em;
 }
@@ -542,6 +539,11 @@ article p {
   font-weight: bolder;
 }
 
+.menu {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
 .menu__note {
   font-family: "action_manbold";
   background-color: #e4d5ce;

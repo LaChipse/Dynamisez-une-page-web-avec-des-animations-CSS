@@ -9,6 +9,7 @@ h3 {
 
 h4 {
     font-size: nth($font-size, 3);
+    margin-bottom: 15px;
     &:hover {
         & + .soulignement {
             transform: scalex(1);
@@ -28,7 +29,7 @@ h4 {
 .soulignement {
     position: relative;
     margin: auto;
-    bottom: 35px;
+    bottom: 22px;
     transform-origin: left;
     transform: scaleX(0);
     transition: transform $delay;
