@@ -11,8 +11,6 @@
     border-radius: 10px;
     &__p {
         @include margin($mt: 0px, $mr: 20px, $ml: 20px);
-        opacity: 1;
-        transition: opacity $delay;
     }
 }
 

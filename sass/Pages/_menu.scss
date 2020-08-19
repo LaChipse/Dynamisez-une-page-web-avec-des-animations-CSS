@@ -1,6 +1,6 @@
 .menu {
-        width: 50%;
-        margin: auto;
-        text-align: center;
+    width: 50%;
+    margin: auto;
+    text-align: center;
     @include font-menu ($menu-input);
 }

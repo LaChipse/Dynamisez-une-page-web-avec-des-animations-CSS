@@ -406,8 +406,6 @@ ul:nth-last-child(-n+1) {
 }
 .next__p {
   margin: 0px 20px 10px 20px;
-  opacity: 1;
-  transition: opacity 600ms;
 }
 
 .point {
