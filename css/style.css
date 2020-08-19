@@ -638,8 +638,7 @@ a {
 @media (max-width: 599px) {
   .acceuil--note {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
   }
 }
 .acceuil--chic {
@@ -664,8 +663,7 @@ a {
 @media (max-width: 599px) {
   .acceuil--chic {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
   }
 }
 .acceuil--delice {
@@ -690,8 +688,7 @@ a {
 @media (max-width: 599px) {
   .acceuil--delice {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
   }
 }
 .acceuil--palette {
@@ -716,8 +713,14 @@ a {
 @media (max-width: 599px) {
   .acceuil--palette {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 599px) {
+  .acceuil--note i {
+    position: relative;
+    top: 20px;
   }
 }
 

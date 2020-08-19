@@ -13,6 +13,13 @@
     @include acceuil-style($menu-input);
 }
 
+.acceuil--note i {
+    @media (max-width: 599px) {
+        position: relative;
+        top: 20px;
+    }
+}
+
 article p {
     font-size: nth($font-size, 6);
     font-weight: bolder;
