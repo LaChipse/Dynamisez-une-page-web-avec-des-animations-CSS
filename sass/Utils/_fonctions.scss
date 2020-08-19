@@ -16,6 +16,11 @@
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
             }
+            @media (max-width: 599px) {
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
         }
     }
 }
@@ -58,25 +63,35 @@
                 content: "";
                 display: flex;
                 position: relative;
-                width: nth($width, 5); 
+                width: nth($width, 5);
                 margin-left: 40px;
                 height: 2px;
                 background: map-get($palette, bg);
                 top: map-get($palette, top);
                 border: map-get($palette, border);
                 border-radius: 100px;
+                @media (max-width: 599px) {
+                    width: 8%;
+                    margin-left: 20px;
+                    top: map-get($palette, topmedia);
+                }
             }
             &::after {
                 content: "";
                 display: flex;
                 position: relative;
-                width: nth($width, 5); 
+                width: nth($width, 5);
                 height: 2px;
                 background: map-get($palette, bg);
                 bottom: map-get($palette, bot);
                 left: 70%;
                 border: map-get($palette, border);
                 border-radius: 100px;
+                @media (max-width: 599px) {
+                    width: 8%;
+                    bottom: 12px;
+                    left: 84%;
+                }
             }
         }
     }

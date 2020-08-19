@@ -4,8 +4,11 @@
     color: $color-secondary;
     background-color: $color-primary;
     &__heading {
-        font-size: nth($font-size, 6);
+        font-size: nth($font-size, 9);
         text-align: center;
         padding: 0.3em;
+        @media (max-width: 599px) {
+            font-size: nth($font-size, 8);
+        }
     }
 }

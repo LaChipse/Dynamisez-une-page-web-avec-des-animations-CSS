@@ -3,25 +3,31 @@
     justify-content: space-around;
     background-color: $color-primary;
     color: $color-secondary;
-    width: 17%;
+    width: 22%;
     margin: auto;
     margin-top: 1.5em;
     margin-bottom: 75px;
-    font-size: nth($font-size, 3);
+    font-size: nth($font-size, 6);
     border-radius: 10px;
     &__p {
         @include margin($mt: 0px, $mr: 20px, $ml: 20px);
+    }
+    @media (max-width: 599px) {
+        font-size: nth($font-size, 4);
+        width: 250px;
+        margin-bottom: 60px;
     }
 }
 
 .point {
     opacity: 0;
-    font-size: 1.5em;
+    font-size: nth($font-size, 6);
     color: $color-secondary;
-    animation: point 800ms both infinite ease-in-out alternate;
+    padding: 3px;
+    animation: point 1500ms both infinite ease-in-out alternate;
         @for $i from 1 through $numb-point {
              &--#{$i} {
-            animation-delay: 200ms * $i;
+            animation-delay: $delay * $i;
              }
         }
 }

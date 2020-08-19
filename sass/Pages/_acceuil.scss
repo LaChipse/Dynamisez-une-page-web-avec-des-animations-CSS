@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    @media (max-width: 599px) {
+        width: 80%;
+    }
 }
 
 .acceuil {
@@ -11,6 +14,6 @@
 }
 
 article p {
-    font-size: nth($font-size, 4);
+    font-size: nth($font-size, 6);
     font-weight: bolder;
 }

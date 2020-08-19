@@ -3,4 +3,9 @@
     margin: auto;
     text-align: center;
     @include font-menu ($menu-input);
+    @media (max-width: 599px) {
+        width: 80%;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
 }
