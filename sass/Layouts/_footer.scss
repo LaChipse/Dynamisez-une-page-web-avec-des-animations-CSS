@@ -4,10 +4,8 @@
     bottom: 0px;
     color: $color-secondary;
     background-color: $color-primary;
-    &__element {
     display: flex;
     justify-content: space-between;
-    }
     &__mention {
         @include margin($ml: 20px);
         font-size: nth($font-size, 6);

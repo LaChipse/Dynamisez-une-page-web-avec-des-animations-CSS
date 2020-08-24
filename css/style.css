@@ -86,8 +86,6 @@ body {
   bottom: 0px;
   color: #FFCA28;
   background-color: #368062;
-}
-.footer__element {
   display: flex;
   justify-content: space-between;
 }
