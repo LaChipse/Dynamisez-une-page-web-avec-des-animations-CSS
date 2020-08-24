@@ -3,6 +3,15 @@ $color-secondary: #FFCA28;
 $bg-note: #e4d5ce;
 $color-bg: rgb(230, 230, 230);
 
+$color-note: black;
+$color-palette: #3E923A;
+$color-chic-1: #D8852E;
+$color-chic-2: #A56799;
+$color-chic-3: #905BFD;
+$color-delice-1: #0431DF;
+$color-delice-2: #0670F3;
+$color-delice-3: #00B3F9;
+
 $font-size: 0.5em, 0.75em, 1em, 1.25em, 1.5em, 1.75em, 2em, 2.5em, 3.5em;
 $font-note: 'action_manbold';
 $font-chic: 'GreatVibes';
@@ -13,15 +22,6 @@ $margin-top: 10px;
 $margin-bottom: 10px;
 $margin-right: 0px;
 $margin-left: 0px;
-
-$color-note: black;
-$color-palette: #3E923A;
-$color-chic-1: #D8852E;
-$color-chic-2: #A56799;
-$color-chic-3: #905BFD;
-$color-delice-1: #0431DF;
-$color-delice-2: #0670F3;
-$color-delice-3: #00B3F9;
 
 $grad-chic: linear-gradient(to right, $color-chic-1, 50%, #A466C7, #8F5AFF);
 $grad-delice: linear-gradient(to right, $color-delice-1, 40%, $color-delice-3);

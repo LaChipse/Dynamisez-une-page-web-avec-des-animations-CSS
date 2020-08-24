@@ -150,12 +150,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: black;
   top: 15px;
   border: 0.1px solid black;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__note::before {
@@ -170,11 +170,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: black;
   bottom: 18px;
-  left: 70%;
   border: 0.1px solid black;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__note::after {
@@ -188,12 +188,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #D8852E;
   top: 15px;
   border: 0.1px solid #D8852E;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic1::before {
@@ -208,11 +208,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #D8852E;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #D8852E;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic1::after {
@@ -226,12 +226,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #A56799;
   top: 15px;
   border: 0.1px solid #A56799;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic2::before {
@@ -246,11 +246,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #A56799;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #A56799;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic2::after {
@@ -264,12 +264,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #905BFD;
   top: 15px;
   border: 0.1px solid #905BFD;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic3::before {
@@ -284,11 +284,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #905BFD;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #905BFD;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__chic3::after {
@@ -302,12 +302,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #0431DF;
   top: 20px;
   border: 0.1px solid #0431DF;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice1::before {
@@ -322,11 +322,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #0431DF;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #0431DF;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice1::after {
@@ -340,12 +340,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #0670F3;
   top: 20px;
   border: 0.1px solid #0670F3;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice2::before {
@@ -360,11 +360,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #0670F3;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #0670F3;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice2::after {
@@ -378,12 +378,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: #00B3F9;
   top: 20px;
   border: 0.1px solid #00B3F9;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice3::before {
@@ -398,11 +398,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: #00B3F9;
   bottom: 20px;
-  left: 70%;
   border: 0.1px solid #00B3F9;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__delice3::after {
@@ -416,12 +416,12 @@ h4:hover + .soulignement {
   display: flex;
   position: relative;
   width: 25%;
-  margin-left: 40px;
   height: 2px;
+  border-radius: 100px;
+  margin-left: 40px;
   background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   top: 25px;
   border: display;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__palette::before {
@@ -436,11 +436,11 @@ h4:hover + .soulignement {
   position: relative;
   width: 25%;
   height: 2px;
+  border-radius: 100px;
+  left: 70%;
   background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   bottom: 17px;
-  left: 70%;
   border: display;
-  border-radius: 100px;
 }
 @media (max-width: 599px) {
   .h4__palette::after {
@@ -591,11 +591,6 @@ ul:nth-last-child(-n+1) {
 }
 .point--3 {
   animation-delay: 1800ms;
-}
-
-.menu__note i {
-  position: relative;
-  top: 50px;
 }
 
 a {
@@ -776,6 +771,11 @@ article p {
     padding-top: 0px;
     padding-bottom: 50px;
   }
+}
+
+.menu__note i {
+  position: relative;
+  top: 50px;
 }
 
 .menu__chic--1 {
