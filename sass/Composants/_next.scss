@@ -10,7 +10,7 @@
     font-size: nth($font-size, 6);
     border-radius: nth($pix, 3);
     &__p {
-        @include margin($mt: nth($pix, 1), $mr: nth($pix, 5), $ml: nth($pix, 5));
+        @include margin($mr: nth($pix, 5), $ml: nth($pix, 5));
     }
     @media (max-width: 599px) {
         font-size: nth($font-size, 4);
@@ -21,8 +21,6 @@
 
 .point {
     opacity: 0;
-    font-size: nth($font-size, 6);
-    color: $color-secondary;
     padding: 3px;
     animation: point 1500ms both infinite ease-in-out alternate;
         @for $i from 1 through $numb-point {

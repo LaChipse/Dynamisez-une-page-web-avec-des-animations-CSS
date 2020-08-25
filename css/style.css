@@ -564,7 +564,7 @@ ul:nth-last-child(-n+1) {
   border-radius: 10px;
 }
 .next__p {
-  margin: 0px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
 }
 @media (max-width: 599px) {
   .next {
@@ -576,8 +576,6 @@ ul:nth-last-child(-n+1) {
 
 .point {
   opacity: 0;
-  font-size: 1.75em;
-  color: #FFCA28;
   padding: 3px;
   animation: point 1500ms both infinite ease-in-out alternate;
 }
@@ -649,7 +647,7 @@ a {
   animation: zoom 200ms ease-in-out both;
 }
 .acceuil--chic__heading {
-  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
+  background: linear-gradient(to right, #D8852E, 40%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -742,7 +740,7 @@ article p {
   background-color: #e6e6e6;
 }
 .menu__chic__h3 {
-  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
+  background: linear-gradient(to right, #D8852E, 40%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
