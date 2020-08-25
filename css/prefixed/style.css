@@ -767,9 +767,9 @@ a {
           animation: zoom 200ms ease-in-out both;
 }
 .acceuil--chic__heading {
-  background: -webkit-gradient(linear, left top, right top, from(#D8852E), color-stop(50%), color-stop(#A466C7), to(#8F5AFF));
-  background: -o-linear-gradient(left, #D8852E, 50%, #A466C7, #8F5AFF);
-  background: linear-gradient(to right, #D8852E, 50%, #A466C7, #8F5AFF);
+  background: -webkit-gradient(linear, left top, right top, from(#D8852E), color-stop(50%), color-stop(#A56799), to(#905BFD));
+  background: -o-linear-gradient(left, #D8852E, 50%, #A56799, #905BFD);
+  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -868,9 +868,9 @@ article p {
   background-color: #e6e6e6;
 }
 .menu__chic__h3 {
-  background: -webkit-gradient(linear, left top, right top, from(#D8852E), color-stop(50%), color-stop(#A466C7), to(#8F5AFF));
-  background: -o-linear-gradient(left, #D8852E, 50%, #A466C7, #8F5AFF);
-  background: linear-gradient(to right, #D8852E, 50%, #A466C7, #8F5AFF);
+  background: -webkit-gradient(linear, left top, right top, from(#D8852E), color-stop(50%), color-stop(#A56799), to(#905BFD));
+  background: -o-linear-gradient(left, #D8852E, 50%, #A56799, #905BFD);
+  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }

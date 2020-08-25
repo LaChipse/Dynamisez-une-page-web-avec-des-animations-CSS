@@ -649,7 +649,7 @@ a {
   animation: zoom 200ms ease-in-out both;
 }
 .acceuil--chic__heading {
-  background: linear-gradient(to right, #D8852E, 50%, #A466C7, #8F5AFF);
+  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -742,7 +742,7 @@ article p {
   background-color: #e6e6e6;
 }
 .menu__chic__h3 {
-  background: linear-gradient(to right, #D8852E, 50%, #A466C7, #8F5AFF);
+  background: linear-gradient(to right, #D8852E, 50%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
