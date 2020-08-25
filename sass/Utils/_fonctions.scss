@@ -5,20 +5,10 @@
           font-family: map-get($palette, ff);
           font-style: map-get($palette , fs);
           color: map-get($palette, col);
-          &:hover {
-            h2, p, i {
-            animation: zoom 200ms ease-in-out both;
-            }
-          }
-          @include dimension;
             &__heading {
                 background: map-get($palette, grad);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
-            }
-            @media (max-width: 599px) {
-                width: 100%;
-                padding: nth($pix, 8);
             }
         }
     }

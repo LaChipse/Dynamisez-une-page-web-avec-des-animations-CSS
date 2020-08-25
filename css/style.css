@@ -607,102 +607,62 @@ a {
   }
 }
 
+.acceuil {
+  width: 35%;
+  margin: 15px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
 .acceuil--note {
   background-color: #e4d5ce;
   font-family: "action_manbold";
   font-style: oblique;
   color: black;
-  width: 35%;
-  margin: 15px;
-  padding-top: 165px;
-  padding-bottom: 165px;
-  text-align: center;
-}
-.acceuil--note:hover h2, .acceuil--note:hover p, .acceuil--note:hover i {
-  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--note__heading {
   background: black;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-@media (max-width: 599px) {
-  .acceuil--note {
-    width: 100%;
-    padding: 50px;
-  }
-}
 .acceuil--chic {
   background-color: #e6e6e6;
   font-family: "GreatVibes";
   font-style: bold;
   color: #D8852E;
-  width: 35%;
-  margin: 15px;
-  padding-top: 165px;
-  padding-bottom: 165px;
-  text-align: center;
-}
-.acceuil--chic:hover h2, .acceuil--chic:hover p, .acceuil--chic:hover i {
-  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--chic__heading {
   background: linear-gradient(to right, #D8852E, 40%, #A56799, #905BFD);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-@media (max-width: 599px) {
-  .acceuil--chic {
-    width: 100%;
-    padding: 50px;
-  }
-}
 .acceuil--delice {
   background-color: #e6e6e6;
   font-family: "KaushanScript";
   font-style: oblique;
   color: #0670F3;
-  width: 35%;
-  margin: 15px;
-  padding-top: 165px;
-  padding-bottom: 165px;
-  text-align: center;
-}
-.acceuil--delice:hover h2, .acceuil--delice:hover p, .acceuil--delice:hover i {
-  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--delice__heading {
   background: linear-gradient(to right, #0431DF, 40%, #00B3F9);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-@media (max-width: 599px) {
-  .acceuil--delice {
-    width: 100%;
-    padding: 50px;
-  }
-}
 .acceuil--palette {
   background-color: #e6e6e6;
   font-family: "Sofia";
   font-style: oblique;
   color: #3E923A;
-  width: 35%;
-  margin: 15px;
-  padding-top: 165px;
-  padding-bottom: 165px;
-  text-align: center;
-}
-.acceuil--palette:hover h2, .acceuil--palette:hover p, .acceuil--palette:hover i {
-  animation: zoom 200ms ease-in-out both;
 }
 .acceuil--palette__heading {
   background: linear-gradient(to right, #3E923A, 40%, #BEFF7F);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.acceuil:hover h2, .acceuil:hover p, .acceuil:hover i {
+  animation: zoom 200ms ease-in-out both;
+}
 @media (max-width: 599px) {
-  .acceuil--palette {
+  .acceuil {
     width: 100%;
     padding: 50px;
   }

@@ -10,7 +10,17 @@
 }
 
 .acceuil {
+    @include dimension;
     @include acceuil-style($menu-input);
+    &:hover {
+        h2, p, i {
+        animation: zoom 200ms ease-in-out both;
+        }
+    }
+    @media (max-width: 599px) {
+        width: 100%;
+        padding: nth($pix, 8);
+    }
 }
 
 .acceuil--note i {
