@@ -4,16 +4,16 @@ h2 {
 
 h3 {
     font-size: nth($font-size, 8);
-    padding: 30px;
+    padding: nth($pix, 7);
     @media (max-width: 599px) {
         font-size: nth($font-size, 5);
-        padding-bottom: 10px;
+        padding-bottom: nth($pix, 3);
     }
 }
 
 h4 {
     font-size: nth($font-size, 5);
-    margin-bottom: 15px;
+    margin-bottom: nth($pix, 4);
     &:hover {
         & + .soulignement {
             transform: scalex(1);
@@ -46,9 +46,9 @@ h4 {
 
 h5 {
     font-size: nth($font-size, 7);
-    padding: 30px;
+    padding: nth($pix, 7);
     @media (max-width: 599px) {
         font-size: 1.50em;
-        padding-top: 0em;
+        padding-top: nth($pix, 1);
     }
 }

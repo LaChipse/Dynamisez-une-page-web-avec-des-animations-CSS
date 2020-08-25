@@ -2,13 +2,13 @@ ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-right: 2em;
+    margin-top: nth($pix, 1);
+    padding-top: nth($pix, 1);
+    padding-right: nth($pix, 7);
     font-size: nth($font-size, 3);
     @media (max-width: 599px) {
-        padding-left: 20px;
-        padding-right: 25px;
+        padding-left: nth($pix, 5);
+        padding-right: nth($pix, 6);
         font-size: nth($font-size, 1);
     }
 }
@@ -22,6 +22,6 @@ ul {
 ul:nth-last-child(-n+1) {
     padding-bottom: 50px;
     @media (max-width: 599px) {
-        padding-bottom: 20px;
+        padding-bottom: nth($pix, 5);
     }
 }

@@ -1,12 +1,12 @@
-@mixin margin ($mt: $margin-top, $mr: $margin-right, $mb: $margin-bottom, $ml: $margin-left){
+@mixin margin ($mt: nth($pix, 3), $mr: nth($pix, 1), $mb: nth($pix, 3), $ml: nth($pix, 1)){
     margin: $mt $mr $mb $ml;
 }
 
 @mixin dimension {
     width: 35%;
-    margin: 1em;
-    padding-top: 10em;
-    padding-bottom: 10em;
+    margin: nth($pix, 4);
+    padding-top: 165px;
+    padding-bottom: 165px;
     text-align: center;
 }
 

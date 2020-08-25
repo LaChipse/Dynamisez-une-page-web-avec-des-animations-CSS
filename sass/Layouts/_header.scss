@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    bottom: 30px;
+    bottom: nth($pix, 7);
     color: $color-secondary;
     background-color: $color-primary;
     &__heading {

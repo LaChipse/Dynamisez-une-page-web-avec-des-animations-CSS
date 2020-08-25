@@ -16,7 +16,7 @@
 .acceuil--note i {
     @media (max-width: 599px) {
         position: relative;
-        top: 20px;
+        top: nth($pix, 5);
     }
 }
 

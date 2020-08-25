@@ -5,12 +5,12 @@
     color: $color-secondary;
     width: 22%;
     margin: auto;
-    margin-top: 1.5em;
+    margin-top: nth($pix, 6);
     margin-bottom: 75px;
     font-size: nth($font-size, 6);
-    border-radius: 10px;
+    border-radius: nth($pix, 3);
     &__p {
-        @include margin($mt: 0px, $mr: 20px, $ml: 20px);
+        @include margin($mt: nth($pix, 1), $mr: nth($pix, 5), $ml: nth($pix, 5));
     }
     @media (max-width: 599px) {
         font-size: nth($font-size, 4);

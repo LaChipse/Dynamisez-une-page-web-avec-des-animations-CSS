@@ -1,16 +1,17 @@
 .menu {
     width: 50%;
     margin: auto;
+    margin-bottom: 100px;
     text-align: center;
     @include font-menu ($menu-input);
     @media (max-width: 599px) {
         width: 80%;
-        padding-top: 0px;
-        padding-bottom: 50px;
+        margin-top: nth($pix, 1);
+        margin-bottom: nth($pix, 8);
     }
 }
 
 .menu__note i {
     position: relative;
-    top: 50px;
+    top: nth($pix, 8);
 }

@@ -1,13 +1,13 @@
 .footer {
     position: fixed;
     width: 100%;
-    bottom: 0px;
+    bottom: nth($pix, 1);
     color: $color-secondary;
     background-color: $color-primary;
     display: flex;
     justify-content: space-between;
     &__mention {
-        @include margin($ml: 20px);
+        @include margin($ml: nth($pix, 5));
         font-size: nth($font-size, 6);
         &:hover {
             animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 3;
@@ -17,9 +17,9 @@
         }
     }
     &__contact {
-        @include margin($mr: 20px);
+        @include margin($mr: nth($pix, 5));
         font-size: nth($font-size, 6);
-        right: 0px;
+        right: nth($pix, 1);
         &:hover {
             animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 3;
         }
