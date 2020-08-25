@@ -75,6 +75,9 @@ body {
   padding: 0.3em;
 }
 @media (max-width: 599px) {
+  .header {
+    bottom: 35px;
+  }
   .header__heading {
     font-size: 2.5em;
   }
