@@ -2,14 +2,6 @@
     margin: $mt $mr $mb $ml;
 }
 
-@mixin dimension {
-    width: 35%;
-    margin: nth($pix, 4);
-    padding-top: 150px;
-    padding-bottom: 150px;
-    text-align: center;
-}
-
 @mixin position-trait {
     display: flex;
     position: relative;
